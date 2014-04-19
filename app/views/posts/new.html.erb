@@ -1,0 +1,22 @@
+<div class="private-square span6 offset 2">
+  <h1> Your story is unique. Upload your photo and write about a time in your life that relates to it. </h1>
+  <%= simple_form_for @post do |f| %>
+  <br/>
+  <%= f.input :title, label: 'Whose story is this?', placeholder: 'eg. John, Mary, Kate, Steven' %>
+  <br/>
+  <%= f.input :description, label: 'What happened?', placeholder: 'eg. It was a dark and stormy night...' %>
+  <br/>
+    <%= f.label :image, :label => 'Upload Your Picture!'  %>
+    <%= f.file_field :image, :label => 'Image'  %>
+  <br/>
+  <br/>
+  <br/>
+
+  <%= f.button :submit, :class => 'btn btn-warning' %>
+    
+  <% end %>
+  
+</div>
+
+
+
