@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 gem "twitter-bootstrap-rails"
 gem 'simple_form'
+gem 'country_select'
+gem 'carrierwave'
 
 
 # Use ActiveModel has_secure_password
