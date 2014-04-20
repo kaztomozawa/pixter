@@ -5,7 +5,6 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-
 module Pixter
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -21,3 +20,6 @@ module Pixter
     # config.i18n.default_locale = :de
   end
 end
+
+require Rails.root.join("app", "uploaders", "image_uploader.rb")
+
